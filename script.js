@@ -11,7 +11,9 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let answer = prompt("Enter your choice: ");
-    return answer;
+    if(answer.toUpperCase() == "ROCK" || answer.toUpperCase() == "PAPER" || answer.toUpperCase() == "SCISSORS")
+        return answer.toLowerCase();
+    return "Invalid Answer";
 }
 
 console.log(getHumanChoice());
