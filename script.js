@@ -14,11 +14,15 @@ function getComputerChoice() {
 
 /*step 3*/
 function getHumanChoice() {
-    let answer = prompt("Enter your choice: ");
-    if(answer.toUpperCase() == "ROCK" || answer.toUpperCase() == "PAPER" || answer.toUpperCase() == "SCISSORS")
-        return answer.toLowerCase();
-    return "Invalid Answer";
+    return prompt("Enter your choice: ");
 }
+
+getHumanChoice();
 
 /* step 4 */
 let humanScore = 0, computerScore = 0;
+
+/*STEP 5*/
+function playRound(humanChoice, computerChoice) {
+
+}
