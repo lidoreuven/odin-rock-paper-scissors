@@ -9,6 +9,9 @@ function getComputerChoice() {
         return "scissors"; 
 }
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+function getHumanChoice() {
+    let answer = prompt("Enter your choice: ");
+    return answer;
+}
+
+console.log(getHumanChoice());
