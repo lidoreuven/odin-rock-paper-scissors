@@ -1,4 +1,7 @@
 
+
+
+/*step 2*/
 function getComputerChoice() {
     let guess = Math.random()*3 + 1;
     if (guess >= 1 && guess < 2)
@@ -9,6 +12,7 @@ function getComputerChoice() {
         return "scissors"; 
 }
 
+/*step 3*/
 function getHumanChoice() {
     let answer = prompt("Enter your choice: ");
     if(answer.toUpperCase() == "ROCK" || answer.toUpperCase() == "PAPER" || answer.toUpperCase() == "SCISSORS")
@@ -16,4 +20,5 @@ function getHumanChoice() {
     return "Invalid Answer";
 }
 
-console.log(getHumanChoice());
+/* step 4 */
+let humanScore = 0, computerScore = 0;
